@@ -1,3 +1,10 @@
+export type OrderLocationdata = {
+    latitude: number;
+    longitude: number;
+    address: string;
+}
+
+
 export type Products = {
 
     id: number;
@@ -7,3 +14,4 @@ export type Products = {
     imageUri: string;
 
 }
+

@@ -1,9 +1,18 @@
 import axios from "axios";
 
-const API_URL = 'http://localhost:8080';
+//const API_URL = 'http://localhost:8080'; //local
+const API_URL = 'https://dsdeliver-machado.herokuapp.com'; //prod
 
-export function fetchProducts(){
+const mapboxToken = process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX;
 
-return axios(`${API_URL}/products`)
+export function fetchProducts() {
+
+    return axios(`${API_URL}/products`)
+
+}
+
+export function fetchLocalMapbox(local: string){
+
+    return axios(`https://api.mapbox.com/geocoding/v5/mapbox.places/${local}.json?access_token=${mapboxToken}`)
 
 }
