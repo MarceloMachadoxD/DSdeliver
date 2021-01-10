@@ -1,8 +1,8 @@
 import axios from "axios";
 import { OrderPayLoad } from "./Orders/types";
 
-const API_URL = 'http://localhost:8080'; //local
-//onst API_URL = 'https://dsdeliver-machado.herokuapp.com'; //prod
+//const API_URL = 'http://localhost:8080'; //local
+const API_URL = 'https://dsdeliver-machado.herokuapp.com'; //prod
 
 const mapboxToken = process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX;
 
